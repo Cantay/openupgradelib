@@ -22,6 +22,7 @@ addons:
 # command to run tests, e.g. python setup.py test
 script:
     - source ~/virtualenv/python2.7/bin/activate
+    - pip install --upgrade
     - pip install -q -r requirements.txt
     - export PYTHONPATH=~/build/OCA/openupgradelib:$PYTHONPATH
     - coverage run setup.py test
